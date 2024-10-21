@@ -12,7 +12,11 @@
 export default {
   name: "UserProfile",
   data() {
-    return {};
+    return {
+      nombre: "Juan Rojas",
+      email: "juanrojas@yahoo.com",
+      bio: "Apasionado corredor de F1",
+    };
   },
 };
 </script>
