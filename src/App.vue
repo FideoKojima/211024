@@ -1,13 +1,14 @@
-<<<<<<< HEAD
 <script>
 import UserProfile from "./components/UserProfile.vue";
 import Product from "./components/Product.vue";
+import FormularioUsuario from "./components/FormularioUsuario.vue";
 
 export default {
   name: "App",
   components: {
     UserProfile,
     Product,
+    FormularioUsuario,
   },
 };
 </script>
@@ -21,15 +22,9 @@ export default {
 
     <h2 clas="mb-3">Ejercicio 2: Productos</h2>
     <Product />
-  </div>
-=======
-<script setup>
-import FormularioUsuario from './components/FormularioUsuario.vue';
-</script>
 
-<template>
+    <h2 clas="mb-3">Ejercicio 3: Formulario de Usuario</h2>
     <FormularioUsuario />
->>>>>>> 2e5be8a82c3b05a79a56b6e7111db071fca46bc9
+  </div>
 </template>
-
-<style scoped></style>
+```
