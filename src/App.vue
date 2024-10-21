@@ -2,7 +2,6 @@
 import UserProfile from "./components/UserProfile.vue";
 import Product from "./components/Product.vue";
 import FormularioUsuario from "./components/FormularioUsuario.vue";
-import ProductList from "./components/ProductList.vue";
 
 export default {
   name: "App",
@@ -10,7 +9,6 @@ export default {
     UserProfile,
     Product,
     FormularioUsuario,
-    ProductList,
   },
 };
 </script>
@@ -27,8 +25,5 @@ export default {
 
     <h2 clas="mb-3">Ejercicio 3: Formulario de Usuario</h2>
     <FormularioUsuario />
-
-    <h2 clas="mb-3">Ejercicio 4: Lista de Productos</h2>
   </div>
 </template>
-```
