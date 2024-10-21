@@ -10,6 +10,7 @@ export default {
         UserProfile,
         Product,
         FormularioUsuario,
+        ListaProductos,
     },
     data() {
         return {
