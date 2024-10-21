@@ -2,7 +2,12 @@
   <div class="list-group">
     <div clas="list-group-item">
       <h5>{{ nombre }}</h5>
+      <h5>{{ nombre2 }}</h5>
+      <h5>{{ nombre3 }}</h5>
+
       <p :style="{ color: precioColor }">Precio: ${{ precio }}</p>
+      <p :style="{ color: precioColor2 }">Precio: ${{ precio2 }}</p>
+      <p :style="{ color: precioColor3 }">Precio: ${{ precio3 }}</p>
     </div>
   </div>
 </template>
