@@ -15,6 +15,14 @@ export default {
       nombre: "Laptop",
       precio: 1000,
       precioColor: "green",
+
+      nombre2: "Smartphone",
+      precio2: 500,
+      precioColor2: "red",
+
+      nombre3: "Tablet",
+      precio3: 300,
+      precioColor3: "blue",
     };
   },
 };
