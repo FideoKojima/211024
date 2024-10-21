@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <script>
 import UserProfile from "./components/UserProfile.vue";
 import Product from "./components/Product.vue";
@@ -21,19 +22,14 @@ export default {
     <h2 clas="mb-3">Ejercicio 2: Productos</h2>
     <Product />
   </div>
+=======
+<script setup>
+import FormularioUsuario from './components/FormularioUsuario.vue';
+</script>
+
+<template>
+    <FormularioUsuario />
+>>>>>>> 2e5be8a82c3b05a79a56b6e7111db071fca46bc9
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
+<style scoped></style>
