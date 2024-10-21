@@ -28,7 +28,7 @@ export default {
     <h2 class="mb-3">Ejercicio 3: Formulario de Usuario</h2>
     <FormularioUsuario />
 
-    <h2 class="mb-3">Ejercicio 4: Lista de Tareas</h2>
+    <h2 class="mb-3">Ejercicio 4: Lista de Productos</h2>
     <ListaProductos />
   </div>
 </template>
