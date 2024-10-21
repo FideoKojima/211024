@@ -1,36 +1,46 @@
 <template>
   <div class="list-group">
-    <div clas="list-group-item">
-      <h5>{{ nombre }}</h5>
-      <h5>{{ nombre2 }}</h5>
-      <h5>{{ nombre3 }}</h5>
-
-      <p :style="{ color: precioColor }">Precio: ${{ precio }}</p>
-      <p :style="{ color: precioColor2 }">Precio: ${{ precio2 }}</p>
-      <p :style="{ color: precioColor3 }">Precio: ${{ precio3 }}</p>
+    <div
+      v-for="producto in productos"
+      :key="producto.id"
+      class="list-group-item"
+    >
+      <h5>{{ producto.nombre }}</h5>
+      <p :style="{ color: producto.precioColor }">
+        Precio: ${{ producto.precio.toFixed(2) }}
+      </p>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Product",
+  name: "Producto",
   data() {
     return {
-      nombre: "Laptop",
-      precio: 1000,
-      precioColor: "green",
-
-      nombre2: "Smartphone",
-      precio2: 500,
-      precioColor2: "red",
-
-      nombre3: "Tablet",
-      precio3: 300,
-      precioColor3: "blue",
+      productos: [
+        {
+          id: 1,
+          nombre: "Smartphone XYZ",
+          precio: 599.99,
+          precioColor: "green",
+        },
+        { id: 2, nombre: "Laptop ABC", precio: 1299.99, precioColor: "blue" },
+        { id: 3, nombre: "Tablet 123", precio: 399.99, precioColor: "red" },
+        {
+          id: 4,
+          nombre: "Smartwatch QWE",
+          precio: 199.99,
+          precioColor: "purple",
+        },
+        {
+          id: 5,
+          nombre: "Auriculares Bluetooth",
+          precio: 79.99,
+          precioColor: "orange",
+        },
+      ],
     };
   },
 };
 </script>
-
-<style scoped></style>
