@@ -10,14 +10,14 @@
       <div class="row mb-5">
         <div class="col-lg-8 mx-auto">
           <h2 class="h4 mb-3">Perfil de Usuario</h2>
-          <PerfilUsuario />
+          <UserProfile />
         </div>
       </div>
 
       <div class="row mb-5">
         <div class="col-lg-10 mx-auto">
           <h2 class="h4 mb-3">Catálogo de Productos</h2>
-          <Producto />
+          <Product />
         </div>
       </div>
 
