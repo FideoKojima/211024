@@ -1,21 +1,29 @@
 <template>
-  <div class="list-group">
+  <div class="list-group shadow-sm">
     <div
       v-for="producto in productos"
       :key="producto.id"
-      class="list-group-item"
+      class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
     >
-      <h5>{{ producto.nombre }}</h5>
-      <p :style="{ color: producto.precioColor }">
-        Precio: ${{ producto.precio.toFixed(2) }}
-      </p>
+      <div>
+        <h5 class="mb-1">{{ producto.nombre }}</h5>
+        <p class="mb-1" :style="{ color: producto.precioColor }">
+          <strong>${{ producto.precio.toFixed(2) }}</strong>
+        </p>
+      </div>
+      <div class="d-flex gap-2">
+        <span class="badge bg-success rounded-pill">En Stock</span>
+        <button class="btn btn-outline-primary btn-sm">
+          Agregar al carrito
+        </button>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Producto",
+  name: "Product",
   data() {
     return {
       productos: [
